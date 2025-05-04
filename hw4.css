@@ -1,0 +1,170 @@
+/* Hw4 CSS */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8); 
+    transition: background-color 0.4s ease-in-out;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 1.0); 
+}
+.header img {
+  vertical-align: middle;
+}
+.header p, 
+.header h1 {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Form Container */
+.form-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Form Content: Flexbox for layout */
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Iframe Container css */
+.iframe-container {
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 250px;
+    height: 250px;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table and Form Elements */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 5px;
+  vertical-align: top;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+}
+input[type="range"] {
+  width: 90%;
+}
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Error Messages */
+.error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 2px;
+}
+
+/* Buttons */
+button {
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #0070ba;
+  color: #fff;
+  border: none;
+}
+button:hover {
+  background-color: #005a94;
+}
+
+/* Review Section */
+#reviewSection {
+  width: 90%;
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+/* Footer */
+.footer {
+  width: 135%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+  background-color: #0070ba; 
+  color: #fff;           
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* footer iframe styling */
+iframe[title="Footer"] {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    height: 100px;
+    border: none;
+}
+
+h2, p {
+  text-align: center;
+}
